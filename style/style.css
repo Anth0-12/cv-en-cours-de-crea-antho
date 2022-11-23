@@ -1,0 +1,1228 @@
+* {
+    margin: 0;
+}
+
+body {
+    position: relative;
+    z-index: -2000;
+}
+
+/* @font-face {
+  font-family:'DORISBR';
+  src: url(/font/DORISBR.TTF);
+  } */
+
+   :root {
+    --ecriture: white;
+    --background-ligne: #3a8fd5;
+    --background-header-footer: #000000;
+    --background-contenu: #030303;
+    --box-shadow: #ffffff23;
+    --border-image: #3a8fd5;
+    --ecriture-span: #3a8fd5;
+    --background-bouton: #000000;
+    --background-bouton-hover: white;
+    --border-bouton: #3a8fd5;
+    --ecriture-bouton: #3a8fd5;
+    --ecriture-bouton-hover: #000000;
+    --background-barre-progr: #d8d8d8;
+    --fa: #3a8fd5;
+   }
+
+/*------------------------------------------------------ header ------------------------------------------------------*/
+
+#banniere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 10vh;
+    width: 100%;
+    
+    background-color: var(--background-header-footer);
+    box-shadow: 0 0 40px var(--box-shadow);
+
+
+    /* font-family:'DORISBR'; */
+    font-family: 'Days One', sans-serif;
+
+    /* border-bottom: 1px solid #be0000; */
+
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+}
+
+.box {
+    margin: 0 auto;
+    border-bottom: 1px solid transparent;
+}
+
+/* ------------------------------- animation ligne bleu --------------------- */
+.bottom {
+    position: absolute;
+    -webkit-animation: 5s linear infinite;
+    animation: 5s linear infinite;
+}
+
+
+.bottom {
+    bottom: 0px;
+    left: 0px;
+    height: 1px;
+    -webkit-animation-name: bottom;
+    animation-name: bottom;
+}
+
+@keyframes bottom {
+    25% {
+        width: 0;
+        background: var(--background-ligne);
+    }
+
+    38% {
+        width: calc(100%);
+        background: var(--background-ligne);
+    }
+
+    50% {
+        background: var(--background-ligne);
+    }
+
+    62% {
+        background: var(--background-ligne);
+    }
+
+    75% {
+        width: calc(100%);
+        background: var(--background-ligne);
+    }
+
+    88% {
+        left: auto;
+        right: 0px;
+        width: 0;
+        background: var(--background-ligne);
+    }
+}
+
+
+.banniere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 60%;
+    gap: 2%;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 130px;
+    width: 15%;
+
+    position: relative;
+    top: 50px;
+    
+    z-index: 1000;
+}
+
+/* ----------------------- animation bordure autour image ---------------------------- */
+
+
+.photo img {
+    height: 100%;
+    width: auto;
+    border-radius: 50%;
+    border: 3px solid var(--border-image);
+}
+  
+.nom {
+    height: 90%;
+    width: 25%;
+}
+
+.nom h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--ecriture);
+    /* font-family:'DORISBR'; */
+    font-family: 'Days One', sans-serif;
+    font-size: 200%;
+
+    height: 100%;
+    width: 100%;
+
+    word-spacing: -10px;
+}
+
+
+
+.metier {
+    height: 90%;
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 190%;
+    color: var(--ecriture);
+
+    padding-top: 20px;
+}
+
+
+
+.naissance {
+    height: 90%;
+    width: 15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 5px;
+
+    color: var(--ecriture);
+
+    font-size: 170%;
+
+    padding-top: 20px;
+}
+
+span {
+    color: var(--ecriture-span);
+}
+
+.text {
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+/*!------------------------------------------------------ fin header ------------------------------------------------------*/
+
+
+
+
+
+/*!------------------------------------------------------ contenu ------------------------------------------------------*/
+
+#page {
+    display: flex;
+
+    height: 75vh;
+    width: 100%;
+
+    background-color:  var(--background-header-footer);
+}
+
+/* #page::before {
+    
+    content: "";
+    
+    background-image: url("../img/plans-g60002f7ea_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.01;
+   
+    z-index: -50;
+} */
+
+
+.contenu-page {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+}
+
+
+
+/*------------------------------------------------------ barre latérale ------------------------------------------------------*/
+
+
+.colonne-gauche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 75vh;
+    width: 20vw;
+
+    background-color: var(--background-contenu);
+    
+
+    position: relative;
+    z-index: 100;
+}
+
+
+/*------------------------------------------------------ contenu latéral ------------------------------------------------------*/
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    height: 80vh;
+    width: 18vw;
+
+    position: sticky;
+    top: 0;
+}
+
+.menu ul {
+    height: 80%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    list-style: none;
+
+    position: relative;
+}
+
+.menu ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 10%;
+    width: 70%;
+}
+
+/* ----------------- bouton gauche ------------------ */
+
+.mode {
+    background-color:  var(--background-bouton);
+    border: 2px solid var(--border-bouton);
+    border-radius: 50px;
+
+    color: var(--ecriture-bouton);
+
+    cursor: pointer;
+
+    height: 50px;
+    width: 150px;
+
+    transition: 1s;
+  
+    
+    font-family: 'Days One', sans-serif;
+    font-size: 100%;
+}
+
+.mode:hover {
+    background-color: var(--background-bouton-hover);
+    border-radius: 50px;
+
+    height: 50px;
+    width: 150px;
+
+    color: var(--ecriture-bouton-hover);
+
+    transition: 1s;
+}
+
+.but {
+    width: auto;
+    height: 60%;
+
+    color: var(--ecriture);
+
+    padding: 10px 25px;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    position: relative;
+    display: inline-block;
+
+    outline: 0 !important;
+
+    line-height: 42px;
+
+    padding: 0;
+
+    border: none;
+
+    /* font-family:'DORISBR'; */
+    font-family: 'Days One', sans-serif;
+    font-size: 130%;
+}
+
+.but:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.but:before,
+.but:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: var(--background-ligne);
+    transition: 400ms ease all;
+}
+
+.but:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.but:hover:before,
+.but:hover:after {
+    width: 100%;
+    transition: 400ms ease all;
+}
+
+/* ----------------- carousel ------------------ */
+.slideshow-container {
+    height: 75vh;
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------- masque les images par défaut --------------------------- */
+.mySlides {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.dir {
+    animation: slide 0.8s;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+/* ------------------------ animation fondu --------------------------------- */
+/* .mySlides, .fade {
+    animation: fade 2s;
+}
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+} */
+
+
+/*----------------------------------------------------------------------- page présentation --------------------------------------------*/
+
+#pres {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: var(--ecriture);
+    gap: 30px;
+    background-color: var(--background-contenu);
+}
+
+h2 {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--ecriture);
+    /* font-family:'DORISBR'; */
+    font-family: 'Days One', sans-serif;
+}
+
+.butt {
+    width: auto;
+    height: 100%;
+
+    color: var(--ecriture);
+
+    padding: 10px 25px;
+
+    background: transparent;
+
+    transition: all 0.3s ease;
+
+    position: relative;
+    display: inline-block;
+
+    outline: 0 !important;
+
+    line-height: 42px;
+
+    padding: 0;
+
+    border: none;
+
+    /* font-family:'DORISBR'; */
+    font-family: 'Days One', sans-serif;
+    font-size: 100%;
+}
+
+.butt:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.butt:before,
+.butt:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: var(--background-ligne);
+    transition: 400ms ease all;
+}
+
+.butt:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.butt:hover:before,
+.butt:hover:after {
+    width: 100%;
+    transition: 400ms ease all;
+}
+
+
+
+#presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--ecriture);
+    /* font-family:'DORISBR'; */
+    font-family: 'Days One', sans-serif;
+    font-size: 130%;
+    font-weight: 400;
+    line-height: 150%;
+
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* #presentation, .slide1 {
+            animation: slide1 2s;
+        }
+        @keyframes slide1{
+            from {
+                transform: translateY(-100%);
+              }
+            
+              to {
+                transform: translateY(0%);
+              }
+            } */
+
+/*----------------------------------------------------------------------- fin page présentation --------------------------------------------*/
+
+
+/*----------------------------------------------------------------------- page experience --------------------------------------------*/
+
+#exp {
+    height: 100%;
+    width: 100%;
+
+    gap: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    background-color: var(--background-contenu);
+}
+
+/*----------------------------------------------------------------------- fin page experience --------------------------------------------*/
+
+
+/*----------------------------------------------------------------------- page compétences --------------------------------------------*/
+
+
+#comp {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 7%;
+    background-color: var(--background-contenu);
+}
+
+    .acquis,
+    .nonAcquis {
+        height: 100%;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--ecriture);
+        /* font-family:'DORISBR'; */
+        font-family: 'Days One', sans-serif;
+        font-size: 140%;
+        font-weight: 400;
+    }
+
+
+    /* --------------------------------------- non acquis ----------------------------------- */
+
+    .nonAcquis {
+        flex-direction: column;
+    }
+
+    /* .progrUn, .progrDeux, .progrTrois {
+        font-size: 80%;
+        display: flex;
+        
+    } */
+
+    
+
+    .progrTrois, .prog3  {
+        background: rgb(167, 33, 0);
+        
+        border-radius: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+        width: 30%; 
+        animation-duration: 3s;
+        animation-name: prog3;
+    }
+
+    @keyframes prog3 {
+        from {
+            width: 0px;
+          }
+        
+          to {
+            width: 30%;
+          }
+        }
+
+        /* --------------------------------------- fin non acquis ----------------------------------- */
+
+        /* --------------------------------------- acquis ----------------------------------- */
+
+    .ul-prog-acquis {
+        height: 100%;
+        width: 100%;
+
+        gap: 2%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .prog-acquis {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+        width: 100%;
+    }
+
+    
+
+    /*----------------------------------- barre de progresion ----------------------------------------*/
+
+        .progressionUn, .progressionDeux, .progressionTrois {
+            background-color: var(--background-barre-progr);
+            border-radius: 20px;
+            position: relative;
+            margin: 15px 0;
+            height: 30px;
+            width: 70%;
+        }
+
+        .lan {
+            display: flex;
+            justify-content: flex-end;
+            
+            height: 30px;
+            width: 30%;
+
+            position: relative;
+            margin: 12px 0;
+
+            gap: 15px;
+        }
+
+        .lan img {
+            height: 40px;
+            position: relative;
+            bottom: 5px;
+        }
+
+        .lan img:hover {
+            animation: heartbeat 1.5s ease-in-out infinite both;
+        }
+
+        @keyframes heartbeat {
+            from {
+              -webkit-transform: scale(1);
+                      transform: scale(1);
+              -webkit-transform-origin: center center;
+                      transform-origin: center center;
+              -webkit-animation-timing-function: ease-out;
+                      animation-timing-function: ease-out;
+            }
+            10% {
+              -webkit-transform: scale(0.91);
+                      transform: scale(0.91);
+              -webkit-animation-timing-function: ease-in;
+                      animation-timing-function: ease-in;
+            }
+            17% {
+              -webkit-transform: scale(0.98);
+                      transform: scale(0.98);
+              -webkit-animation-timing-function: ease-out;
+                      animation-timing-function: ease-out;
+            }
+            33% {
+              -webkit-transform: scale(0.87);
+                      transform: scale(0.87);
+              -webkit-animation-timing-function: ease-in;
+                      animation-timing-function: ease-in;
+            }
+            45% {
+              -webkit-transform: scale(1);
+                      transform: scale(1);
+              -webkit-animation-timing-function: ease-out;
+                      animation-timing-function: ease-out;
+            }
+          }
+          
+
+        .progrUn, .prog  {
+            background: rgb(1, 140, 1);
+            
+            border-radius: 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 100%;
+            width: 85%; 
+            animation-duration: 3s;
+            animation-name: prog;
+        }
+
+        @keyframes prog {
+            from {
+                width: 0px;
+              }
+            
+              to {
+                width: 85%;
+              }
+            }
+
+            .progrDeux, .prog2 {
+                background: rgb(0, 206, 0);
+                
+                border-radius: 20px;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                height: 100%;
+                width: 70%; 
+                animation-duration: 3s;
+                animation-name: prog2;
+            }
+    
+            @keyframes prog2 {
+                from {
+                    width: 0px;
+                  }
+                
+                  to {
+                    width: 70%;
+                  }
+                }
+            /*----------------------------------- fin barre de progresion ----------------------------------------*/
+
+/* --------------------------------------- fin acquis ----------------------------------- */
+
+
+/*----------------------------------------------------------------------- fin page compétences --------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------------- page langues --------------------------------------------*/
+
+#langues {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 7%;
+    background-color: var(--background-contenu);
+}
+
+
+.Ang, 
+.It {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Days One', sans-serif;
+    /* font-family:'DORISBR'; */
+}
+
+
+.anglais,
+.espagnol,
+.italien,
+.polonais {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* font-family:'DORISBR'; */
+    color: var(--ecriture);
+    gap: 20px;
+}
+
+ .an button {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* font-family:'DORISBR'; */
+    font-family: 'Days One', sans-serif;
+    font-size: 100%;  
+}
+
+.la button {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* font-family:'DORISBR'; */
+    font-family: 'Days One', sans-serif;
+    font-size: 80%;
+}
+
+.drapAngl {
+    height: 55%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drapIta {
+    height: 25%;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.drapAng {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+    box-shadow: 0 0 40px var(--box-shadow);
+}
+
+.drapIt {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+    box-shadow: 0 0 40px var(--box-shadow);
+}
+    
+.drapIt:hover, .drapAng:hover, .photoSport:hover, .profil:hover{
+        animation: jelly 0.5s ease-out;
+        cursor: pointer;
+      }
+      
+      @keyframes jelly {
+        0% {
+          transform: scale(1, 1);
+        }
+        25% {
+          transform: scale(0.9, 1.4);
+        }
+        50% {
+          transform: scale(1.2, 0.8);
+        }
+        75% {
+          transform: scale(0.95, 1.05);
+        }
+      }
+      
+      @-webkit-keyframes jelly {
+        0% {
+          -webkit-transform: scale(1, 1);
+        }
+        25% {
+          -webkit-transform: scale(0.9, 1.4);
+        }
+        50% {
+          -webkit-transform: scale(1.2, 0.8);
+        }
+        75% {
+          -webkit-transform: scale(0.95, 1.05);
+        }
+      }
+
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.fa-star {
+    margin: 0 !important;
+    color: gold !important;
+}
+
+.fa-star-half-stroke {
+    margin: 0 !important;
+    color: gold !important;
+}
+
+.fa{
+    height: auto;
+    width: auto;
+    color: var(--fa);
+}
+
+.fa:hover {
+    animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@keyframes shake-bottom {
+    0%,
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    10% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: rotate(-4deg);
+              transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      -webkit-transform: rotate(4deg);
+              transform: rotate(4deg);
+    }
+    80% {
+      -webkit-transform: rotate(-2deg);
+              transform: rotate(-2deg);
+    }
+    90% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+  }
+  
+  
+  
+
+/*----------------------------------------------------------------------- fin page langues --------------------------------------------*/
+
+
+
+#hobbies {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--background-contenu);
+}
+
+.hobb {
+    height: 90%;
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grille {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 50%;
+    width: 100%;
+
+    gap: 20px;
+    }
+
+     .foot { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        height: 10%;
+     }
+
+     .footImg { 
+        height: 60%;
+        width: 32%;
+     }
+
+     .photoSport{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        height: 100%;
+        width: 100%;
+
+        border-radius: 50%;
+
+        box-shadow: 0 0 40px var(--box-shadow);
+     }
+/*!------------------------------------------------------ fin contenu ------------------------------------------------------*/
+
+
+/*!------------------------------------------------------ footer ------------------------------------------------------*/
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 15vh;
+    width: 100%;
+
+    background-color:  var(--background-header-footer);
+    box-shadow: 0 0 40px var(--box-shadow);
+
+
+    z-index: 1200;
+    position: relative;
+    font-family: 'Days One', sans-serif;
+    font-size: 140%;
+    font-weight: 400;
+}
+
+/* ------------------------------- animation ligne bleu --------------------- */
+.top {
+    position: absolute;
+    -webkit-animation: 5s linear infinite;
+    animation: 5s linear infinite;
+}
+
+.top {
+    top: 0px;
+    right: 0px;
+    height: 1px;
+    -webkit-animation-name: top;
+    animation-name: top;
+}
+
+@keyframes top {
+    25% {
+        width: 0;
+        background: var(--background-ligne);
+    }
+
+    38% {
+        width: calc(100%);
+        background: var(--background-ligne);
+    }
+
+    50% {
+        background: var(--background-ligne);
+    }
+
+    62% {
+        background: var(--background-ligne);
+    }
+
+    75% {
+        width: calc(100%);
+        background: var(--background-ligne);
+    }
+
+    88% {
+        left: 0;
+        right: auto;
+        width: 0;
+        background: var(--background-ligne);
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 95%;
+}
+
+.fa-solid {
+    margin-right: 20px;
+}
+
+.adresse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 30%;
+
+    color: var(--ecriture);
+    /* font-family:'DORISBR'; */
+
+    /* font-size: 140%; */
+    font-weight: 400;
+}
+
+.telephone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 20%;
+
+    color: var(--ecriture);
+    /* font-family:'DORISBR'; */
+    /* font-size: 140%; */
+    font-weight: 400;
+}
+
+
+
+.mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 20%;
+
+    color: var(--ecriture);
+    /* font-family:'DORISBR'; */
+    /* font-size: 140%; */
+    font-weight: 400;
+}
+
+.permis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 20%;
+
+    color: var(--ecriture);
+    /* font-family:'DORISBR'; */
+    /* font-size: 140%; */
+    font-weight: 400;
+}
+
+
+
+/*------------------------------------------------------ fin footer ------------------------------------------------------*/
+
+
+

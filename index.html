@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="js/script.js" defer></script>
+    <script src="js/dark-mode.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+
+    <header id="banniere">
+        <div class="box bottom"></div>
+        <div class="banniere">
+
+            
+                <div class="photo">
+                   <img src="img/profil twitter lens.jpg" class="profil">
+                </div>
+           
+
+
+                <div class="nom">
+                    <h1 class="text"><span>H</span>ECQUET&ensp;<span>A</span>nthony</h1>
+                    <!-- <h1>HECQUET Anthony</h1> -->
+                </div>
+
+                <div class="metier">
+                    <p class="text"><span>D</span>éveloppeur <span>w</span>eb</p>
+                </div>
+
+                <div class="naissance">
+                    <p class="text"><span>1</span>2/02/1996</p>
+                </div>
+        </div>
+
+                
+
+    </header>
+
+    <div id="page">
+
+        <div class="contenu-page">
+
+            <div class="colonne-gauche">
+                <div class="menu">
+
+                    <ul>
+                        <li><button class="mode">Mode clair</button></li>
+                        <li><button class="but text" onclick="currentSlide(1)"><i class="fa-solid fa-user fa"></i><span>P</span>resentation </button></li>
+                        <li><button class="but text" onclick="currentSlide(2)"><i class="fa-solid fa-medal fa"></i><span>E</span>xperience</button></li>
+                        <li><button class="but text" onclick="currentSlide(3)"><i class="fa-solid fa-chart-column fa"></i><span>C</span>ompetences</button></li>
+                        <li><button class="but text" onclick="currentSlide(4)"><i class="fa-solid fa-comments fa"></i><span>L</span>angues</button></li>
+                        <li><button class="but text" onclick="currentSlide(5)"><i class="fa-solid fa-table-tennis-paddle-ball fa"></i><span>H</span>obbies</button></li>
+                    </ul>
+                </div>
+            </div>
+
+  <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides">
+                    
+                        <div id="pres" class="dir"> 
+                                <h2> <button class="butt"><span>Q</span>ui suis-je?</button></h2>
+
+                                <p id="presentation">Je m'appelle HECQUET Anthony, ayant obtenu un diplôme de webdesigner de niveau Bac+2 à l’issue d’une formation précédente, j’ai décidé de poursuivre une nouvelle formation, cette fois-ci de développeur web et web mobile. Etant actuellement en cours de formation développeur web et web mobile à l’A.F.C.I. de Liévin depuis Septembre 2022, je suis à la recherche d'un stage conventionné d'une durée de 2 mois et demi, débutant le 9 Janvier 2023 et se terminant le 31 Mars 2023 afin de compléter ma formation.</p>
+                                    
+                            </div>    
+                    
+                    </div>
+                
+                    <div class="mySlides">
+                    
+                        <div id="exp"  class="dir"> 
+                            
+                            <p id="presentation">
+                                <span>2</span>015 : Baccalauréat technologique série STI2D 
+                                Lycée H.Darras, Liévin
+                            </p>
+
+                            <p id="presentation">
+                                <span>A</span>oût 2017 : Peintre - mairie de Méricourt
+                            </p>
+
+                            <p id="presentation">
+                                <span>D</span>écembre 2018-Août 2019 : Service civique
+                                Animations personnes âgées
+                            </p>
+
+                            <p id="presentation">
+                                <span>2</span>019 : Certificat Prévention et Secours Civique niveau 1
+                            </p>
+
+                            <p id="presentation">
+                                <span>A</span>vril 2022 : Formation Webdesigner,SIADEP, Lens
+                            </p>
+
+                            <p id="presentation">
+                                <span>J</span>uillet 2022 : Equivalent Bac+2 webdesigner
+                            </p>
+                            
+                        </div>
+
+                    </div>
+                
+                    <div class="mySlides">
+                    
+                        <div id="comp"  class="dir"> 
+
+                            <div class="acquis">
+
+                                <ul class="ul-prog-acquis">
+
+
+                                    <li class="prog-acquis">
+
+                                        <div class="lan">
+                                            <img src="img/html.png" alt="">HTML
+                                        </div> 
+                                        
+                                        <div class="progressionUn">
+                                            <div class="progrUn">
+                                           
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+
+
+                                    <li class="prog-acquis">
+
+                                        <div class="lan">
+                                           <img src="img/css.png" alt=""> CSS
+                                        </div>
+
+                                        <div class="progressionUn">
+                                            <div class="progrUn">
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </li>
+
+
+
+                                    <li class="prog-acquis">
+
+                                        <div class="lan">
+                                           <img src="img/wordpress.png" alt=""> WordPress
+                                        </div>
+
+                                        <div class="progressionDeux">
+                                            <div class="progrDeux">
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </li>
+
+
+
+                                    <li class="prog-acquis">
+
+                                        <div class="lan">
+                                           <img src="img/photoshop.png" alt=""> Photoshop
+                                        </div>
+
+                                        <div class="progressionUn">
+                                            <div class="progrUn">
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </li>
+
+
+
+                                    <li class="prog-acquis">
+
+                                        <div class="lan">
+                                           <img src="img/illustrator.png" alt=""> Illustrator
+                                        </div>
+
+                                        <div class="progressionUn">
+                                            <div class="progrUn">
+                                               
+                                            </div>
+                                        </div>
+                                        
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            
+                            <div class="nonAcquis">
+                                
+                                <ul class="ul-prog-acquis">
+
+                                    <h3 class="la"><button class="butt"><span>E</span>n cours d'acquisition</button></h3>
+                                    
+                                    <li class="prog-acquis">
+
+                                        <div class="lan">
+                                           <img src="img/javascript.png" alt=""> JavaScript
+                                        </div> 
+                                        
+                                        <div class="progressionTrois">
+                                            <div class="progrTrois">
+                                                
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+
+
+                                    <li class="prog-acquis">
+
+                                        <div class="lan">
+                                           <img src="img/php.png" alt=""> PHP
+                                        </div>
+
+                                        <div class="progressionTrois">
+                                            <div class="progrTrois">
+                                               
+                                            </div>
+                                        </div>
+                                        
+                                    </li>
+
+
+
+                                    <li class="prog-acquis">
+
+                                        <div class="lan">
+                                           <img src="img/mysql.png" alt=""> mySQL
+                                        </div>
+
+                                        <div class="progressionTrois">
+                                            <div class="progrTrois">
+                                               
+                                            </div>
+                                        </div>
+                                        
+                                    </li>
+
+
+                                    <li class="prog-acquis">
+
+                                        <div class="lan">
+                                           <img src="img/bootstrap.png" alt=""> Bootstrap
+                                        </div>
+
+                                        <div class="progressionTrois">
+                                            <div class="progrTrois">
+                                               
+                                            </div>
+                                        </div>
+                                        
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                   
+                    </div>
+
+                    <div class="mySlides">
+                    
+                        <div id="langues"  class="dir"> 
+                            
+                                <div class="Ang">
+                                    
+                                    <div class="anglais">
+                                        <h3 class="an"> <button class="butt"><span>A</span>nglais </button></h3>
+                                        <div class="drapAngl">
+                                            <img src="img/Drapeau-anglais.jfif" alt="" class="drapAng">
+                                        </div>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                    <div class="espagnol">
+                                        <h3 class="an"> <button class="butt"><span>E</span>spagnol</button></h3>
+                                        <div class="drapAngl">
+                                            <img src="img/drap-esp.jpg" alt="" class="drapAng">
+                                        </div>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+
+
+                                <div class="It">
+                                    <div class="italien">
+                                        <h3 class="la"> <button class="butt"><span>I</span>talien </button></h3>
+                                        <div class="drapIta">
+                                            <img src="img/italie.png" alt="" class="drapIt">
+                                        </div>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="polonais">
+                                        <h3 class="la"> <button class="butt"><span>P</span>olonais</button></h3>
+                                        <div class="drapIta">
+                                            <img src="img/pologne.png" alt="" class="drapIt">
+                                        </div>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="mySlides">
+                    
+                        <div id="hobbies"  class="dir"> 
+
+                            
+                            <div class="hobb">
+
+                                <div class="grille"> 
+                                    <div class="foot">
+                                        <h3 class="la"><button class="butt"><span>F</span>ootball </button></h3>
+                                    </div>
+
+                                    <div class="footImg">
+                                        <img src="img/coupe du monde.jpg" alt="" class="photoSport">
+                                    </div>
+                                </div>
+
+                                <div class="grille">
+                                    <div class="foot">
+                                        <h3 class="la"><button class="butt"><span>V</span>TT </button></h3>
+                                    </div>
+
+                                    <div class="footImg">
+                                        <img src="img/vtt.jpg" alt="" class="photoSport">
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                                
+                            <div class="hobb">
+
+                                <div class="grille">
+                                    <div class="foot">
+                                        <h3 class="la"><button class="butt"><span>R</span>etouche<span> &ensp;p</span>hoto</button></h3>
+                                    </div>
+
+                                    <div class="footImg">
+                                        <img src="img/photoshop.jpg" alt="" class="photoSport">
+                                    </div>
+                                </div>
+
+                                <div class="grille">
+                                    <div class="foot">
+                                        <h3 class="la"><button class="butt"><span>C</span>inema </button> </h3>
+                                    </div>
+
+                                    <div class="footImg">
+                                        <img src="img/cinema.jpg" alt="" class="photoSport">
+                                    </div>
+                                </div>
+
+                            </div>
+                                
+
+                        </div>
+
+                    </div>
+
+                </div>
+        </div>
+            
+    </div>
+
+    <footer id="footer">
+        <div class="box top"></div>
+        <div id="info" class="footer">
+
+                <div class="adresse">
+                    <p class="text"><i class="fa-solid fa-house fa"></i><span>3</span>&nbsp;rue du Portel, 62680, Méricourt</p>
+                </div>
+
+                <div class="telephone">
+                    <p class="text"><i class="fa-solid fa-phone fa"></i><span>0</span>6 12 70 08 19</p> 
+                </div>
+
+                <div class="mail">
+                    <p class="text"><i class="fa-solid fa-envelope fa"></i><span>a</span>ntho62680@live.fr</p> 
+                </div>
+
+                <div class="permis">
+                    <p class="text"><i class="fa-solid fa-car fa"></i><span>P</span>ermis B</p>
+                </div>
+
+        </div>
+        
+    </footer>
+
+</body>
+
+</html>
